@@ -1,0 +1,19 @@
+{
+  "name": "channings.me",
+  "version": "1.0.0",
+  "description": "Luke Channings",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFuzzball/channings.me.git"
+  },
+  "author": "Luke Channings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheFuzzball/channings.me/issues"
+  },
+  "homepage": "https://github.com/TheFuzzball/channings.me#readme"
+}
