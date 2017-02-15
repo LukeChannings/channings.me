@@ -4,6 +4,7 @@
   "description": "Luke Channings",
   "main": "index.js",
   "scripts": {
+    "css": "postcss -u autoprefixer -u postcss-normalize -u postcss-cssnext",
     "test": "npm test"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/TheFuzzball/channings.me/issues"
   },
-  "homepage": "https://github.com/TheFuzzball/channings.me#readme"
+  "homepage": "https://github.com/TheFuzzball/channings.me#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-normalize": "^0.3.0"
+  }
 }

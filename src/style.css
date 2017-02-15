@@ -1,0 +1,140 @@
+:root {
+  /* Colors */
+  --black: rgba(8%,11%,16%,1.00);
+  --blue: rgba(16%,23%,35%,0.10);
+  --white: rgba(100%,100%,100%,1.00); 
+  --grey: rgba(84%,85%,88%,1.00); 
+  --green: rgba(17%,46%,17%,1.00); 
+  --dark-grey: rgba(51%,51%,51%,1.00);
+}
+
+body {
+  background: var(--black);
+  color: var(--grey);
+  font-family: georgia, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.g-hidden--small {
+  display: none;
+}
+
+.name {
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 30px;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.items {
+  padding-bottom: 15px;
+}
+
+.item {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.item__link {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.item__link:hover .item__text {
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
+.item__icon, .item__text {
+  display: inline-block;
+}
+
+.item__icon {
+  width: 34px;
+  height: 34px;
+}
+
+.item__text {
+  font-size: 14px;
+  font-family: georgia, serif;
+  color: var(--grey);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.item__code {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .name__text {
+    width: 220px;
+  }
+
+  .items {
+    max-width: 410px;
+    margin: auto;
+  }
+
+  .item {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  .item__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .items {
+    max-width: calc(768px - 30px);
+  }
+
+  .item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .item__text {
+    width: auto;
+    line-height: 48px;
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 40px;
+    font-size: 16px;
+  }
+
+  .item__code {
+    display: block;
+    width: 520px;
+    word-wrap: break-word;
+    margin-left: 90px;
+    font-family: Hasklig;
+    font-size: 12px;
+    color: var(--green);
+    background: var(--blue);
+    padding: 9px;
+    height: 100px;
+    overflow: auto;
+  }
+
+  .name__avatar {
+    display: inline-block;
+  }
+}
