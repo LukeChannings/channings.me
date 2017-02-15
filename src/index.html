@@ -17,13 +17,12 @@
       <ul class="items">
         <li class="item">
       <div>
-        <button class="item__link">
+        <button class="item__link" onclick="document.querySelector('.js-public-key').click()">
           <img class="item__icon" src="../assets/lock.svg" alt="Security icon">
           <span class="item__text">Copy Public Key</span>
         </button>
-        <code class="item__code">
-          ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChCz6U6wPlxdwnx4YzNLY0VLbncoss77QTlTz38czxsJUqtUMotiYTO+GNyKiQd9c0XXBVs+xh6+WNEKf8iCAJsfJXZlE1YN9TkDNcwq3V6MICb/yFrRjp07ogqQNAV/6ZGlgcsi7EZU5NQE4ef4jTHQj0YtVqQvjekux4s2uUE9k/2g9pLTCAbTBrgsTN1V0IGJwO/dbHWI/r6auf+Rm1NCY6f7gboCfJRtXfq+8Gf/cBdS/ni4B09SYhJgXUEXKHOXiYpNZXV96zMZvt3/Q5p8J0hU/I+H3s57iXYcgAUutc+ucoLs/p513iRLcdxcALod0Uzd1qc4ZiSSF7Hhpxuf0LpiS8hP2S02Jrz7VMvwru+wYi1Vore6TiI8LEQ3q50TJlQcWi9w69oirssC/uzscrGF6u91wWPDXk+Yi6YU18n5u7lUcP0HmOo2qvYitPqpp2FArETT+bdlzn3t9/ZJ4ZJ1TRG+zgmt3Q5nx+OdaN/hXUlXMr1Lz3tr55/uhbxwbkUuAqGrJgabUQFyXaUWsUMYDFQab8aZ7aVopi90emIP3LPuzcFzXVnH6v6MHlV9IdcO+zps1OeuIrOhI7cHPs/XER/JinWxkJbd+HcPHqdlLC+AQJW28ou23VvHYCYEvHOVwcAKTaQ7Eg2nNYVGTaC0To8EtqCO0VeAtkXQ== Luke Channings
-        </code>
+        <textarea class="item__code js-public-key" onclick="this.focus(); this.select(); document.execCommand('copy')">
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChCz6U6wPlxdwnx4YzNLY0VLbncoss77QTlTz38czxsJUqtUMotiYTO+GNyKiQd9c0XXBVs+xh6+WNEKf8iCAJsfJXZlE1YN9TkDNcwq3V6MICb/yFrRjp07ogqQNAV/6ZGlgcsi7EZU5NQE4ef4jTHQj0YtVqQvjekux4s2uUE9k/2g9pLTCAbTBrgsTN1V0IGJwO/dbHWI/r6auf+Rm1NCY6f7gboCfJRtXfq+8Gf/cBdS/ni4B09SYhJgXUEXKHOXiYpNZXV96zMZvt3/Q5p8J0hU/I+H3s57iXYcgAUutc+ucoLs/p513iRLcdxcALod0Uzd1qc4ZiSSF7Hhpxuf0LpiS8hP2S02Jrz7VMvwru+wYi1Vore6TiI8LEQ3q50TJlQcWi9w69oirssC/uzscrGF6u91wWPDXk+Yi6YU18n5u7lUcP0HmOo2qvYitPqpp2FArETT+bdlzn3t9/ZJ4ZJ1TRG+zgmt3Q5nx+OdaN/hXUlXMr1Lz3tr55/uhbxwbkUuAqGrJgabUQFyXaUWsUMYDFQab8aZ7aVopi90emIP3LPuzcFzXVnH6v6MHlV9IdcO+zps1OeuIrOhI7cHPs/XER/JinWxkJbd+HcPHqdlLC+AQJW28ou23VvHYCYEvHOVwcAKTaQ7Eg2nNYVGTaC0To8EtqCO0VeAtkXQ== Luke Channings</textarea>
       </div>
     </li>
     <li class="item">

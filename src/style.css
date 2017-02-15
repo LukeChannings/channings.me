@@ -132,6 +132,8 @@ body {
     padding: 9px;
     height: 100px;
     overflow: auto;
+    border: none;
+    resize: none;
   }
 
   .name__avatar {
